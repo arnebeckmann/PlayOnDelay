@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/welcome_name"
+        android:id="@+id/welcome_name"
+        android:layout_weight="0.04"
+        android:textSize="46dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:textSize="19dp" />
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/email_name"
+        android:id="@+id/email_name"
+        android:layout_weight="0.04"
+        android:textSize="19dp" />
+
+    <TextView
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView_eMail"
+        android:layout_weight="0.03"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/gcm_field"
+        android:layout_weight="0.69" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sendGCM"
+        android:id="@+id/button_sendGCM"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+</LinearLayout>
